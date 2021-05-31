@@ -19,7 +19,11 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #705E78;
+  height:600px;
+  /*background: #705E78;*/
+  background-image: url('Z-DSC_0745.jpg');
+  background-position: bottom;
+  background-size: cover;
   color: white;
 }
 
@@ -97,6 +101,15 @@ body {
   padding: 20px;
 }
 
+.portraitimg {
+  background-color: rgba(170, 170, 170, 0);
+  width: 75%;
+  padding: 20px;
+  background-image: url('portrait.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 /* Footer */
 .footer {
   padding: 20px;
@@ -137,9 +150,9 @@ body {
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>PhD candidate in Mechanical Engineering at the Colorado School of Mines. Coffee drinker and roaster. </p>
+    <div class="portraitimg" style="height:300px;"> </div>
+
+    <p>PhD candidate in Mechanical Engineering at the Colorado School of Mines. Coffee drinker and by necessity, roaster. </p>
     <h3>More Text</h3>
     <p> .</p>
     <div class="fakeimg" style="height:60px;">Image</div><br>
@@ -148,12 +161,11 @@ body {
   </div>
   <div class="main">
     <h2>My Research</h2>
-    <h5>Development of a backpack model for musculoskeletal simulations</h5>
-    <div id = "modContainer"><p style="float:left;height: 400px;width: 250px">Modeling the interaction between a backpack and the human body as a combination of linear springs.</p>
-        <img src="BackpackModelGraphic.png" alt="Backpack attachments as spring elements" style="float:left;height:400px;margin-left:15px;margin-right: 15px;">
+    <h3>Development of a backpack model for musculoskeletal simulations</h3>
+    <div id = "modContainer"><p style="float:left;height: 400px;width: 385px">Modeling the interaction between a backpack and the human body as a combination of linear springs.
+      <br><br><a href="url">https://doi.org/10.1016/j.apergo.2020.103277</a><br><br>We developed a backpack model that distributes the weight of a backpack between the shoulder straps and hip belt. Using self-selected walking data, we developed load carriage simulations to quantify forces in the lumbar spine under different load distributions. This paper demonstrates a novel approach to modeling the force interaction between a backpack and the wearer, which can be applied to many different walking conditions to better understand how load distribution influences injury risk.</p>
+        <img src="BackpackModelGraphic.png" alt="Backpack attachments as spring elements" style="float:left;height:400px;margin-left:45px;margin-right: 15px;">
     </div>
-    <p>doi link..</p>
-    <p>summary coming.</p>
     <br>
   </div>
 </div>
